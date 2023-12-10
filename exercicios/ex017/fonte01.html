@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!--se a primeira fonte nao for compativel com o navegador ele tenta a segunda e assim adiante-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{          
+            font-family: 'work sans', sans-serif;
+font-weight: 500
+            /*Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rex, vw, vh, %
+
+            recomendação: 16 px ou 1em*/;
+            font-size: 1em;
+
+            /*valores weight: lighter, bold, bolder, normal ou números de 100 a 900*/
+        }
+        h1{
+            /*Shorthand font
+
+            sequência: font-style -> font-weight -> font-size -> font-family
+            
+            completo
+            font-style: italic
+            font-weight: bolder
+            font-size: 3em
+            font-family: sans-serif*/
+
+            font: italic bolder 3em 'work sans';
+            text-align: center;
+            
+        }
+        h2{
+            font: bold 2em 'work sans'
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex laborum eligendi id veniam ullam nesciunt incidunt eaque, autem consectetur maxime quisquam officiis doloribus atque, reiciendis illo harum cum ad.</p>
+    <h2>Texto 2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, magnam cum? Unde optio sapiente recusandae voluptate! Veritatis quae repudiandae aperiam asperiores libero expedita natus deleniti facere, inventore unde distinctio dignissimos.</p>
+    <h2>Texto 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati asperiores ipsam? Laborum nam iure, architecto voluptatibus incidunt deleniti fugit in nemo molestiae qui suscipit, repellendus tenetur. Necessitatibus, nihil laborum.</p>
+    <h2>Texto 4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati asperiores ipsam? Laborum nam iure, architecto voluptatibus incidunt deleniti fugit in nemo molestiae qui suscipit, repellendus tenetur. Necessitatibus, nihil laborum.</p>
+</body>
+</html>

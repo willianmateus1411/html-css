@@ -1,0 +1,39 @@
+Outros exemplos de ESTADOS de elementos (Pseudo-classes) são: Visited e Active
+
+A pseudo-class "visited" é bastante usada em âncoras/links, ela serve para ativar uma configuração de estivo quando uma unidade de elemento for visitada. 
+
+Já a pseudo-class "active" é um estado de elemento que serve para ativar uma configuração de estilo quando uma unidade de elemento for ATIVADA, ou seja... Quando clicarmos nela por exemplo. 
+
+Agora, referente aos Pseudo-elementos , eles podem agir nas classes, nos elementos, nos id's e etc... Eles mexem diretamente no CONTEÚDO PERIFÉRICO DO ELEMENTO . No CSS, os pseudo-elementos são representados por " dois pontos " DUPLOS ( :: )
+
+Suponha que queremos que todo link no final tenha uma indicação de que é um link, podemos abrir um seletor personalizado para links e usar o pseudo-elemento ( :: ) " after " para fazer isso.
+
+Exemplo de uso de pseudo-elemento:
+
+a::after {
+            content: ' ⇦';
+            color: darkgray;
+            font-weight: normal;
+        }
+
+O código acima faz com que manipulemos o conteúdo periférico posterior (pseudo-elemento "after") de links, a Propriedade de Estilo " content " detém o valor que foi determinado para aparecer logo em seguida de todo link que inserirmos no site (seta para esquerda). Além disso, as outras propriedades de estilo do exemplo configuram o estilo de cor e peso desse conteúdo periférico posterior.
+
+Também existe o pseudo-elemento " before ", que funciona como o "after" mas de forma oposta, fazendo com que manipulemos o conteúdo periférico que antecede os elementos.
+
+Nota: Também conseguimos configurar pseudo-elementos e mexer em conteúdos periféricos quando usamos classes (class) . Exemplo:
+
+.especial::before {
+            content: '⇨ ';
+            color: darkgray;
+            font-weight: normal;
+        }
+
+.especial::after {
+            content: ' ⇦';
+            color: darkgrey;
+            font-weight: normal;
+        }
+
+O código no exemplo acima utiliza pseudo-elementos para manipular conteúdo periférico de links que pertencem à classe (class) "especial".
+
+Observação: O sinal de maior ( > ) representa no CSS o " children ", que seria o filho (quando temos elementos dentro de elementos).

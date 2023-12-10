@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(38, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.img-container{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
